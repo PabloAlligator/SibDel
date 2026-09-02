@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/site/css/main.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <nav class="quick-nav" aria-label="Быстрая навигация">
+        <div class="quick-nav__container">
+          <a class="quick-nav__link" href="/promotions.html">
+            <img
+              class="quick-nav__icon"
+              src="/site/images/icons/sales.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="quick-nav__text">Акции</span>
+          </a>
+
+          <a class="quick-nav__link" href="/subscription.html">
+            <img
+              class="quick-nav__icon"
+              src="/site/images/icons/pismo.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="quick-nav__text">Подписка на выгодные цены</span>
+          </a>
+
+          <a class="quick-nav__link" href="/delivery.html">
+            <img
+              class="quick-nav__icon"
+              src="/site/images/icons/delivery.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="quick-nav__text">Доставка и оплата</span>
+          </a>
+
+          <a class="quick-nav__link" href="/contacts.html">
+            <img
+              class="quick-nav__icon"
+              src="/site/images/icons/location.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="quick-nav__text">Магазины</span>
+          </a>
+
+          <a class="quick-nav__link" href="/about.html">
+            <img
+              class="quick-nav__icon"
+              src="/site/images/icons/about.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="quick-nav__text">О нас</span>
+          </a>
+
+          <a class="quick-nav__link" href="/contacts.html">
+            <img
+              class="quick-nav__icon"
+              src="/site/images/icons/contacts.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="quick-nav__text">Контакты</span>
+          </a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              НАСТОЯЩИЕ СИБИРСКИЕ
+              <span class="hero__title-line">ДЕЛИКАТЕСЫ</span>
+            </h1>
+
+            <p class="hero__description">
+              Отборные продукты собственного производства
+              <span class="hero__description-line">
+                и проверенных фермеров
+              </span>
+            </p>
+
+            <div class="hero__actions">
+              <a
+                class="hero__button hero__button--primary"
+                href="/catalog.html"
+              >
+                Перейти в каталог
+              </a>
+
+              <a
+                class="hero__button hero__button--secondary"
+                href="/about.html"
+              >
+                Подробнее о нас
+              </a>
+            </div>
+          </div>
+
+          <picture class="hero__picture">
+            <source
+              media="(min-width: 3000px)"
+              srcset="/site/images/hero/hero-3880.webp"
+            />
+
+            <source
+              media="(min-width: 2200px)"
+              srcset="/site/images/hero/hero-2560.webp"
+            />
+
+            <source
+              media="(min-width: 1600px)"
+              srcset="/site/images/hero/hero-1920.webp"
+            />
+
+            <source
+              media="(min-width: 1100px)"
+              srcset="/site/images/hero/hero-1366.webp"
+            />
+
+            <source
+              media="(min-width: 600px)"
+              srcset="/site/images/hero/hero-768.webp"
+            />
+
+            <img
+              class="hero__image"
+              src="/site/images/hero/hero-480.webp"
+              alt="Сибирские мясные деликатесы на фоне гор и тайги"
+              width="1920"
+              height="760"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section class="quick-categories">
+        <div class="quick-categories__container">
+          <h2 class="quick-categories__title">Быстрые категории</h2>
+
+          <div class="quick-categories__list">
+            <a
+              class="quick-categories__item"
+              href="/catalog.html?category=kolbasy-i-delikatesy"
+            >
+              <div class="quick-categories__image-wrapper">
+                <img
+                  class="quick-categories__image"
+                  src="/site/images/categories/sausages.webp"
+                  alt="Колбасы и деликатесы"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <span class="quick-categories__name"> Колбасы и деликатесы </span>
+            </a>
+
+            <a
+              class="quick-categories__item"
+              href="/catalog.html?category=myaso-i-ptitsa"
+            >
+              <div class="quick-categories__image-wrapper">
+                <img
+                  class="quick-categories__image"
+                  src="/site/images/categories/meat.webp"
+                  alt="Мясо и птица"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <span class="quick-categories__name"> Мясо и птица </span>
+            </a>
+
+            <a
+              class="quick-categories__item"
+              href="/catalog.html?category=molochnye-produkty-i-yaytsa"
+            >
+              <div class="quick-categories__image-wrapper">
+                <img
+                  class="quick-categories__image"
+                  src="/site/images/categories/dairy.webp"
+                  alt="Молочные продукты"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <span class="quick-categories__name"> Молочные продукты </span>
+            </a>
+
+            <a
+              class="quick-categories__item"
+              href="/catalog.html?category=syry"
+            >
+              <div class="quick-categories__image-wrapper">
+                <img
+                  class="quick-categories__image"
+                  src="/site/images/categories/cheese.webp"
+                  alt="Сыры"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <span class="quick-categories__name"> Сыры </span>
+            </a>
+
+            <a
+              class="quick-categories__item"
+              href="/catalog.html?category=khleb-i-vypechka"
+            >
+              <div class="quick-categories__image-wrapper">
+                <img
+                  class="quick-categories__image"
+                  src="/site/images/categories/bakery.webp"
+                  alt="Хлеб и выпечка"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <span class="quick-categories__name"> Хлеб и выпечка </span>
+            </a>
+
+            <a
+              class="quick-categories__item"
+              href="/catalog.html?category=ovoshchi-frukty-i-zelen"
+            >
+              <div class="quick-categories__image-wrapper">
+                <img
+                  class="quick-categories__image"
+                  src="/site/images/categories/vegetables.webp"
+                  alt="Овощи, фрукты и зелень"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <span class="quick-categories__name"> Овощи и фрукты </span>
+            </a>
+
+            <a
+              class="quick-categories__item"
+              href="/catalog.html?category=zamorozka"
+            >
+              <div class="quick-categories__image-wrapper">
+                <img
+                  class="quick-categories__image"
+                  src="/site/images/categories/frozen.webp"
+                  alt="Замороженные продукты"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <span class="quick-categories__name"> Заморозка </span>
+            </a>
+
+            <a
+              class="quick-categories__item"
+              href="/catalog.html?category=ryba-i-moreprodukty"
+            >
+              <div class="quick-categories__image-wrapper">
+                <img
+                  class="quick-categories__image"
+                  src="/site/images/categories/fish.webp"
+                  alt="Рыба и морепродукты"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <span class="quick-categories__name"> Рыба и морепродукты </span>
+            </a>
+
+            <a
+              class="quick-categories__item"
+              href="/catalog.html?category=napitki"
+            >
+              <div class="quick-categories__image-wrapper">
+                <img
+                  class="quick-categories__image"
+                  src="/site/images/categories/drinks.webp"
+                  alt="Напитки"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <span class="quick-categories__name"> Напитки </span>
+            </a>
+
+            <a
+              class="quick-categories__item"
+              href="/catalog.html?category=podarki-i-nabory"
+            >
+              <div class="quick-categories__image-wrapper">
+                <img
+                  class="quick-categories__image"
+                  src="/site/images/categories/gifts.webp"
+                  alt="Подарки и наборы"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <span class="quick-categories__name"> Подарки и наборы </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="/site/js/main.js"></script>
+  </body>
+</html>
