@@ -1,0 +1,42 @@
+# Зависимости
+node_modules/
+
+# Переменные окружения и секреты
+.env
+.env.*
+!.env.example
+
+# Сгенерированный Prisma Client
+generated/
+
+# Пользовательские загрузки
+uploads/*
+!uploads/.gitkeep
+
+# Логи
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Кэш и временные файлы
+.cache/
+.tmp/
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Системные файлы и IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Отчёты
+coverage/
+
+# Временный файл структуры проекта
+project-structure.txt
