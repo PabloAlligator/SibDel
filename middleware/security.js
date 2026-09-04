@@ -1,6 +1,6 @@
-import helmet from "helmet";
+import helmet from 'helmet';
 
-import { env } from "../config/env.js";
+import { env } from '../config/env.js';
 
 const helmetMiddleware = helmet({
   contentSecurityPolicy: {
@@ -13,6 +13,8 @@ const helmetMiddleware = helmet({
 
       objectSrc: ["'none'"],
 
+      frameSrc: ["'self'", 'https://yandex.ru'],
+
       frameAncestors: ["'none'"],
 
       scriptSrc: ["'self'"],
@@ -20,15 +22,15 @@ const helmetMiddleware = helmet({
 
       styleSrc: ["'self'", "'unsafe-inline'"],
 
-      imgSrc: ["'self'", "data:", "blob:"],
+      imgSrc: ["'self'", 'data:', 'blob:'],
 
-      fontSrc: ["'self'", "data:"],
+      fontSrc: ["'self'", 'data:'],
 
       connectSrc: ["'self'"],
 
       formAction: ["'self'"],
 
-      ...(env.NODE_ENV === "production"
+      ...(env.NODE_ENV === 'production'
         ? {
             upgradeInsecureRequests: [],
           }
@@ -39,7 +41,7 @@ const helmetMiddleware = helmet({
   },
 
   strictTransportSecurity:
-    env.NODE_ENV === "production"
+    env.NODE_ENV === 'production'
       ? {
           maxAge: 31_536_000,
           includeSubDomains: true,
@@ -48,13 +50,13 @@ const helmetMiddleware = helmet({
       : false,
 
   referrerPolicy: {
-    policy: "strict-origin-when-cross-origin",
+    policy: 'strict-origin-when-cross-origin',
   },
 
   crossOriginEmbedderPolicy: false,
 
   crossOriginResourcePolicy: {
-    policy: "same-origin",
+    policy: 'same-origin',
   },
 });
 
@@ -65,8 +67,8 @@ export function securityMiddleware(req, res, next) {
     }
 
     res.setHeader(
-      "Permissions-Policy",
-      "camera=(), microphone=(), geolocation=()",
+      'Permissions-Policy',
+      'camera=(), microphone=(), geolocation=()',
     );
 
     return next();
