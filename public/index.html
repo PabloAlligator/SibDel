@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/site/css/main.min.css" />
+
+    <link rel="stylesheet" href="/site/css/swiper-bundle.min.css" />
+
     <title>Document</title>
   </head>
   <body>
@@ -321,10 +324,433 @@
           </div>
         </div>
       </section>
+
+      <!-- собственное производство -->
+
+      <section class="production">
+        <div class="production__container">
+          <div class="production__heading">
+            <h2 class="production__title">Собственное производство</h2>
+
+            <p class="production__description">
+              Готовим с душой из отборного сырья по традиционным рецептам
+            </p>
+          </div>
+
+          <div class="production__list">
+            <a class="production__card" href="/production.html#author-sausages">
+              <div class="production__image-wrapper">
+                <img
+                  class="production__image"
+                  src="/site/images/production/author-sausages.webp"
+                  alt="Авторские колбасы"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="production__card-content">
+                <h3 class="production__card-title">Авторские колбасы</h3>
+              </div>
+            </a>
+
+            <a
+              class="production__card"
+              href="/production.html#smoked-delicacies"
+            >
+              <div class="production__image-wrapper">
+                <img
+                  class="production__image"
+                  src="/site/images/production/smoked-delicacies.webp"
+                  alt="Копчёные деликатесы"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="production__card-content">
+                <h3 class="production__card-title">Копчёные деликатесы</h3>
+              </div>
+            </a>
+
+            <a class="production__card" href="/production.html#semi-finished">
+              <div class="production__image-wrapper">
+                <img
+                  class="production__image"
+                  src="/site/images/production/semi-finished.webp"
+                  alt="Мясные полуфабрикаты"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="production__card-content">
+                <h3 class="production__card-title">Мясные полуфабрикаты</h3>
+              </div>
+            </a>
+
+            <a class="production__card" href="/production.html#ready-meals">
+              <div class="production__image-wrapper">
+                <img
+                  class="production__image"
+                  src="/site/images/production/ready-meals.webp"
+                  alt="Кулинария и готовые блюда"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="production__card-content">
+                <h3 class="production__card-title">
+                  Кулинария и готовые блюда
+                </h3>
+              </div>
+            </a>
+
+            <a class="production__card" href="/production.html#bakery">
+              <div class="production__image-wrapper">
+                <img
+                  class="production__image"
+                  src="/site/images/production/bakery.webp"
+                  alt="Выпечка собственного производства"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="production__card-content">
+                <h3 class="production__card-title">
+                  Выпечка собственного производства
+                </h3>
+              </div>
+            </a>
+
+            <a class="production__more" href="/production.html">
+              <div class="production__more-icon">
+                <img
+                  src="/site/images/icons/production.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+
+              <span class="production__more-text">
+                Смотреть всё производство
+              </span>
+
+              <span class="production__more-arrow" aria-hidden="true"> → </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- акции и предложения -->
+
+      <section class="promotions">
+        <div class="promotions__container">
+          <div class="promotions__header">
+            <h2 class="promotions__title">Акции и предложения</h2>
+
+            <div class="promotions__controls">
+              <a class="promotions__all" href="/promotions.html">
+                Смотреть все акции
+              </a>
+
+              <div class="promotions__navigation">
+                <button
+                  class="promotions__button promotions__button--prev"
+                  type="button"
+                  aria-label="Предыдущие акции"
+                >
+                  ←
+                </button>
+
+                <button
+                  class="promotions__button promotions__button--next"
+                  type="button"
+                  aria-label="Следующие акции"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="promotions__slider swiper">
+            <div class="promotions__wrapper swiper-wrapper">
+              <article class="promotions__slide swiper-slide">
+                <a class="promotions__card" href="/promotions.html">
+                  <div class="promotions__image-wrapper">
+                    <img
+                      class="promotions__image"
+                      src="/site/images/promotions/sausage.webp"
+                      alt="Колбаса Таёжная сырокопчёная"
+                      loading="lazy"
+                      decoding="async"
+                    />
+
+                    <span class="promotions__badge">−25%</span>
+                  </div>
+
+                  <div class="promotions__content">
+                    <h3 class="promotions__card-title">
+                      Колбаса «Таёжная» сырокопчёная
+                    </h3>
+
+                    <div class="promotions__footer">
+                      <div class="promotions__price">
+                        <span class="promotions__price-current">749 ₽</span>
+                        <span class="promotions__price-old">999 ₽</span>
+                      </div>
+
+                      <span class="promotions__date">до 25 мая</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="promotions__slide swiper-slide">
+                <a class="promotions__card" href="/promotions.html">
+                  <div class="promotions__image-wrapper">
+                    <img
+                      class="promotions__image"
+                      src="/site/images/promotions/cheese.webp"
+                      alt="Сыр Алтайский выдержанный"
+                      loading="lazy"
+                      decoding="async"
+                    />
+
+                    <span class="promotions__badge">−20%</span>
+                  </div>
+
+                  <div class="promotions__content">
+                    <h3 class="promotions__card-title">
+                      Сыр Алтайский выдержанный
+                    </h3>
+
+                    <div class="promotions__footer">
+                      <div class="promotions__price">
+                        <span class="promotions__price-current">799 ₽</span>
+                        <span class="promotions__price-old">999 ₽</span>
+                      </div>
+
+                      <span class="promotions__date">до 25 мая</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="promotions__slide swiper-slide">
+                <a class="promotions__card" href="/promotions.html">
+                  <div class="promotions__image-wrapper">
+                    <img
+                      class="promotions__image"
+                      src="/site/images/promotions/gift.webp"
+                      alt="Вторая упаковка в подарок"
+                      loading="lazy"
+                      decoding="async"
+                    />
+
+                    <span class="promotions__badge">1+1</span>
+                  </div>
+
+                  <div class="promotions__content">
+                    <h3 class="promotions__card-title">
+                      Вторая упаковка в подарок
+                    </h3>
+
+                    <p class="promotions__text">На определённые товары</p>
+
+                    <div class="promotions__footer">
+                      <span class="promotions__date">до 31 мая</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="promotions__slide swiper-slide">
+                <a class="promotions__card" href="/delivery.html">
+                  <div class="promotions__image-wrapper">
+                    <img
+                      class="promotions__image"
+                      src="/site/images/promotions/delivery.webp"
+                      alt="Бесплатная доставка"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+
+                  <div class="promotions__content">
+                    <h3 class="promotions__card-title">
+                      Бесплатная доставка от 3000 ₽
+                    </h3>
+
+                    <p class="promotions__text">По Таштыпу и району</p>
+
+                    <div class="promotions__footer">
+                      <span class="promotions__date">
+                        Постоянное предложение
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="promotions__slide swiper-slide">
+                <a class="promotions__card" href="/promotions.html">
+                  <div class="promotions__image-wrapper">
+                    <img
+                      class="promotions__image"
+                      src="/site/images/promotions/gift-set.webp"
+                      alt="Скидка на подарочные наборы"
+                      loading="lazy"
+                      decoding="async"
+                    />
+
+                    <span class="promotions__badge">−15%</span>
+                  </div>
+
+                  <div class="promotions__content">
+                    <h3 class="promotions__card-title">
+                      Скидка на подарочные наборы
+                    </h3>
+
+                    <div class="promotions__footer">
+                      <span class="promotions__date">до 31 мая</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+
+              <article class="promotions__slide swiper-slide">
+                <a class="promotions__card" href="/promotions.html">
+                  <div class="promotions__image-wrapper">
+                    <img
+                      class="promotions__image"
+                      src="/site/images/promotions/family-set.webp"
+                      alt="Семейный мясной набор"
+                      loading="lazy"
+                      decoding="async"
+                    />
+
+                    <span class="promotions__badge">−10%</span>
+                  </div>
+
+                  <div class="promotions__content">
+                    <h3 class="promotions__card-title">
+                      Семейный мясной набор
+                    </h3>
+
+                    <p class="promotions__text">
+                      Выгодная цена на большой набор
+                    </p>
+
+                    <div class="promotions__footer">
+                      <span class="promotions__date">до 31 мая</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- подписка -->
+
+      <section class="subscription-banner">
+        <div class="subscription-banner__container">
+          <div
+            class="subscription-banner__decor subscription-banner__decor--left"
+          >
+            <img
+              class="subscription-banner__decor-image"
+              src="/site/images/subscription/sub-left.png"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <div class="subscription-banner__content">
+            <div class="subscription-banner__icon">
+              <img
+                class="subscription-banner__icon-image"
+                src="/site/images/icons/sales.png"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+
+            <div class="subscription-banner__info">
+              <h2 class="subscription-banner__title">
+                Подписка на выгодные цены
+              </h2>
+
+              <p class="subscription-banner__description">
+                Получайте персональные предложения и скидки до 30%
+                <span class="subscription-banner__description-line">
+                  на любимые товары каждую неделю
+                </span>
+              </p>
+            </div>
+
+            <form class="subscription-banner__form">
+              <div class="subscription-banner__form-row">
+                <label
+                  class="subscription-banner__label"
+                  for="subscription-email"
+                >
+                  Ваш e-mail
+                </label>
+
+                <input
+                  class="subscription-banner__input"
+                  id="subscription-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="Введите ваш e-mail"
+                  required
+                />
+
+                <button class="subscription-banner__button" type="submit">
+                  Подписаться
+                </button>
+              </div>
+
+              <p class="subscription-banner__policy">
+                Нажимая «Подписаться», вы соглашаетесь с
+                <a
+                  class="subscription-banner__policy-link"
+                  href="/privacy-policy.html"
+                >
+                  политикой обработки персональных данных
+                </a>
+              </p>
+            </form>
+          </div>
+
+          <div
+            class="subscription-banner__decor subscription-banner__decor--right"
+          >
+            <img
+              class="subscription-banner__decor-image"
+              src="/site/images/subscription/sub-right.png"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
 
+    <script src="/site/js/swiper-bundle.min.js"></script>
     <script src="/site/js/main.js"></script>
   </body>
 </html>
